@@ -26,5 +26,4 @@ Almacenar la información en formato [Json](https://www.json.org/json-en.html), 
 ## Soldar Placa
 
 Orden de componentes para soldadura: 
-![](../Imagenes/PlacaXSoldar.jpeg)
-
+![](Imagenes/PlacaXSoldar.jpeg)
