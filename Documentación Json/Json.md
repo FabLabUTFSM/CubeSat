@@ -6,7 +6,7 @@
 
 # Desarrollo Json
 
-##V1
+## V1
 
 Json sugerido Joseto: {"medicion": i, "GPS":[Time GMT, Lat, Long], "Accelerometer": [x,y,z], "Magnetometer": [O1,O2,O3,O4,O5,O6,O7,O8,O9], "Temperatura":temp, "Presion": presion, "Gases": [VOC,co2]}
 
