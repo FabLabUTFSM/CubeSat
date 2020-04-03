@@ -5,7 +5,7 @@ USM Cubesat respositorio para Firmware
 
 Autor: Nicolas Carrasco
 
-###Sensores: 
+### Sensores: 
 	- [Accelerometro](https://www.adafruit.com/product/1413)
 	- [Magnetometro](https://www.adafruit.com/product/3463)
 	- [Sensor de Temperatura](https://www.adafruit.com/product/1782)
