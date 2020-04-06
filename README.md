@@ -21,6 +21,8 @@ Añadir [GPS](https://www.adafruit.com/product/746)
 
 ## Propuesta_V2
 
+Ver branch Json.
+
 Almacenar la información en formato [Json](https://www.json.org/json-en.html), a tráves de la libreria [Arduino Json](https://arduinojson.org/). 
 
 ## Soldar Placa
