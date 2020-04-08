@@ -1,6 +1,5 @@
 # CubeSat
 USM Cubesat respositorio para Firmware
-Hola!
 ## Propuesta_V1
 
 Autor: Nicolas Carrasco
