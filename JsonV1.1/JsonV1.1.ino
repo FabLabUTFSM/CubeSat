@@ -18,7 +18,7 @@
 //Variables
 //int scale = 200; mapea los datos del accelerometro No lo estoy usando, porque nadie sabe porque esta, por ultimo mapeamos despues los datos.
 const int sampleSize = 10; //tomar mas muestras para reducir el error del accelerometro, puede ser 1.
-#define capacity 521 //peso del json
+#define capacity 505 //peso del json
 #define SEALEVELPRESSURE_HPA 1013.25 //config sensor de presion
 
 //declarar componentes

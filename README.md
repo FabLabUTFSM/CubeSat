@@ -34,7 +34,7 @@ Ejemplo:
  30.5,
 "Presion": [
 1013.25 ,
-1013,25,
+1013.25,
 20.1], 
 "Gases": [
 1000,
@@ -46,7 +46,7 @@ Ejemplo:
 
 Peso del JSON medido a traves de [ArduinoJson Assistant](https://arduinojson.org/v6/assistant/) 
 
-El cual tiene un peso de 521 bytes en el microcontrolador STM32. 
+El cual tiene un peso de 505 bytes en el microcontrolador STM32. 
 
 
 
