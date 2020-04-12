@@ -137,7 +137,7 @@ void loop() {
   
   
   //enviar a SD
-  serializeJson(doc, dataFile);
+  serializeJson(doc, dataFile);// Probar que va a pasar con los saltos de linea
   doc.clear();
 }
 
