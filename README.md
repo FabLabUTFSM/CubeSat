@@ -77,7 +77,7 @@ Union de Propuesta_V1, en lugar de dejar los datos en un buffer y subirlos a la 
 #### Tareas
 - Unir Propuesta_V1 con esta. oK!
 - Guardar datos en la tarjeta. SD ok!
-- BMP: Ques es OverSampling y los filtros.
+- BMP: Que es OverSampling y los filtros.
 - Integrar GPS
 
 ## Referencias
