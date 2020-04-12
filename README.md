@@ -4,7 +4,7 @@ USM Cubesat respositorio para Firmware
 
 ## Json
 
-## Formato
+### Formato
 
 {"GPS":[Time GMT, Lat, Long], "Accelerometer": [x,y,z], "Magnetometer": [O1,O2,O3,O4,O5,O6,O7,O8,O9], "Temperatura":temp, "Presion": [presion hPa, SeaLeves, temp], "Gases": [VOC,co2,Eta,H2]}
 
@@ -41,7 +41,7 @@ Ejemplo:
 1000,
 1000,
 1000,
-],
+]
 }
 
 Peso del JSON medido a traves de [ArduinoJson Assistant](https://arduinojson.org/v6/assistant/) 
