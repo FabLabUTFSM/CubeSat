@@ -1,9 +1,10 @@
 #include <ArduinoJson.h>
 DynamicJsonDocument doc(42);
-
+bool json = true;
 
 void setup() {
   Serial.begin(9600);
+ 
 
 }
 
@@ -17,4 +18,3 @@ void loop() {
   Serial.println(" ");
   doc.clear();
 }
-"Hola!"

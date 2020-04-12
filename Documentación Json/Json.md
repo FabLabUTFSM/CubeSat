@@ -8,13 +8,11 @@
 
 ## V1
 
-Json sugerido Joseto: {"medicion": i, "GPS":[Time GMT, Lat, Long], "Accelerometer": [x,y,z], "Magnetometer": [O1,O2,O3,O4,O5,O6,O7,O8,O9], "Temperatura":temp, "Presion": presion, "Gases": [VOC,co2]}
+Json sugerido Joseto: {"medicion": i, "GPS":[Time GMT, Lat, Long], "Accelerometer": [x,y,z], "Magnetometer": [O1,O2,O3,O4,O5,O6,O7,O8,O9], "Temperatura":temp, "Presion": [presion hPa, SeaLeves, temp], "Gases": [VOC,co2,Eta,H2]}
 
 Ejemplo:
 
 {
-"medicion": 
-10, 
 "GPS":[
 194509.000, 
 71.1234, 
@@ -36,15 +34,32 @@ Ejemplo:
 200],
 "Temperatura":
  30.5,
-"Presion": 
-1320.20 , 
+"Presion": [
+1013.25 ,
+1013,25,
+20.1], 
 "Gases": [
 1000,
-1000
-]
+1000,
+1000,
+1000,
+],
 }
 
 Peso del JSON medido a traves de [ArduinoJson Assistant](https://arduinojson.org/v6/assistant/) 
 
-El cual tiene un peso de 450 bytes en el microcontrolador STM32. 
+El cual tiene un peso de 521 bytes en el microcontrolador STM32. 
 
+## Componentes a integrar en el codigo
+
+- SD. OK! 
+- Accelerometro. OK! 
+- Magnetometro. OK! 
+- Sensor de Temperatura OK! 
+- Presión. OK!
+- Gases OK!
+- GPS
+
+## Tarea pendiente:
+
+- BMP: Ques es OverSampling y los filtros
