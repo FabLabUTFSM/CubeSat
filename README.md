@@ -57,7 +57,7 @@ Autor: [Jose Tomas Dominguez](https://github.com/josetomas)
 Este codigo simplemente genera un Json, y lo imprime a traves del puerto serial, explica como utilizar todas las funciones que necesitamos de la libreria ArduinoJson.
 
 ## Json V1.1 
-Autor: Autor: [Jose Tomas Dominguez](https://github.com/josetomas)
+Autor: [Jose Tomas Dominguez](https://github.com/josetomas)
 
 Union de Propuesta_V1, en lugar de dejar los datos en un buffer y subirlos a la SD, esta los almacena en un json y luego los sube a la SD. 
 
