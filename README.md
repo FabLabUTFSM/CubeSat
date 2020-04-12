@@ -82,6 +82,7 @@ Union de Propuesta_V1, en lugar de dejar los datos en un buffer y subirlos a la 
 
 ## Referencias
 [Libreria](https://arduinojson.org/)
+
 [Documentacion de serializacion](https://arduinojson.org/v6/doc/serialization/)
 
 
