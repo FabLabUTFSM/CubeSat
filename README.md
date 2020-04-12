@@ -6,7 +6,7 @@ USM Cubesat respositorio para Firmware
 
 ### Formato
 
-{"GPS":[Time GMT, Lat, Long], "Accelerometer": [x,y,z], "Magnetometer": [O1,O2,O3,O4,O5,O6,O7,O8,O9], "Temperatura":temp, "Presion": [presion hPa, SeaLeves, temp], "Gases": [VOC,co2,Eta,H2]}
+{"GPS":[Lat, Long, speed, angle, altitude, satelites], "Accelerometer": [x,y,z], "Magnetometer": [O1,O2,O3,O4,O5,O6,O7,O8,O9], "Temperatura":temp, "Presion": [presion hPa, SeaLeves, temp], "Gases": [VOC,co2,Eta,H2]}
 
 Ejemplo:
 
@@ -14,7 +14,10 @@ Ejemplo:
 "GPS":[
 194509.000, 
 71.1234, 
-71.1234
+71.1234,
+90.35,
+2000.25,
+5
 ],
 "Accelerometer": [
 3,
@@ -46,7 +49,7 @@ Ejemplo:
 
 Peso del JSON medido a traves de [ArduinoJson Assistant](https://arduinojson.org/v6/assistant/) 
 
-El cual tiene un peso de 505 bytes en el microcontrolador STM32. 
+El cual tiene un peso de 553 bytes en el microcontrolador STM32. 
 
 
 
@@ -79,6 +82,10 @@ Union de Propuesta_V1, en lugar de dejar los datos en un buffer y subirlos a la 
 - Guardar datos en la tarjeta. SD OK!
 - BMP: Que es OverSampling y los filtros.
 - Integrar GPS
+- Definir si el GPS funcionara por I2C, Software Serial o Hardware Serial.
+- Averiguar que significa Set GPSECHO. - Ver ejemplo de parsing. 
+
+
 
 ## Referencias
 [Libreria](https://arduinojson.org/)
