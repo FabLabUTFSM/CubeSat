@@ -1,30 +1,106 @@
 # CubeSat
+
 USM Cubesat respositorio para Firmware
+<<<<<<< HEAD
 ## Propuesta_V1
+=======
 
-Autor: Nicolas Carrasco
+## Json
+
+### Formato
+
+{"GPS":[Lat, Long, speed, angle, altitude, satelites], "Accelerometer": [x,y,z], "Magnetometer": [O1,O2,O3,O4,O5,O6,O7,O8,O9], "Temperatura":temp, "Presion": [presion hPa, SeaLeves, temp], "Gases": [VOC,co2,Eta,H2]}
+
+Ejemplo:
+
+{
+"GPS":[
+194509.000, 
+71.1234, 
+71.1234,
+90.35,
+2000.25,
+5
+],
+"Accelerometer": [
+3,
+3,
+3], 
+"Magnetometer": [
+200,
+200,
+200,
+200,
+200,
+200,
+200,
+200,
+200],
+"Temperatura":
+ 30.5,
+"Presion": [
+1013.25 ,
+1013.25,
+20.1], 
+"Gases": [
+1000,
+1000,
+1000,
+1000,
+]
+}
+
+Peso del JSON medido a traves de [ArduinoJson Assistant](https://arduinojson.org/v6/assistant/) 
+
+El cual tiene un peso de 553 bytes en el microcontrolador STM32. 
+
+>>>>>>> json
 
 
-### Sensores 
-- [Accelerometro](https://www.adafruit.com/product/1413)
-- [Magnetometro](https://www.adafruit.com/product/3463)
-- [Sensor de Temperatura](https://www.adafruit.com/product/1782)
-- [Presión](https://www.adafruit.com/product/3966)
-- [DataLogger](https://www.adafruit.com/product/2922)
-- [Gases](https://www.adafruit.com/product/380)
+## Json V1
+
+Autor: [Jose Tomas Dominguez](https://github.com/josetomas)
+
+Este codigo simplemente genera un Json, y lo imprime a traves del puerto serial, explica como utilizar todas las funciones que necesitamos de la libreria ArduinoJson.
+
+## Json V2 
+Autores: [Jose Tomas Dominguez](https://github.com/josetomas), Nicolas Carrasco
+
+Union de Propuesta_V1, en lugar de dejar los datos en un buffer y subirlos a la SD, esta los almacena en un json y luego los sube a la SD. 
 
 
 ### Trabajos pendientes
 
-Añadir [GPS](https://www.adafruit.com/product/746)
+#### Componentes a integrar en el codigo
 
-## Propuesta_V2
+- SD. OK! 
+- Accelerometro. OK! 
+- Magnetometro. OK! 
+- Sensor de Temperatura OK! 
+- Presión. OK!
+- Gases OK!
+- GPS Ok! 
 
+#### Tareas
+- Unir Propuesta_V1 con esta. OK!
+- Guardar datos en la tarjeta. SD OK!
+- BMP: Que es OverSampling y los filtros.
+- Integrar GPS OK! 
+- Definir si el GPS funcionara por I2C, Software Serial o Hardware Serial.
+- Averiguar que significa Set GPSECHO. - Ver ejemplo de parsing. 
+- Probar en placa. 
+
+
+
+## Referencias
+[Libreria](https://arduinojson.org/)
+
+<<<<<<< HEAD
 Ver branch Json.
 
 Almacenar la información en formato [Json](https://www.json.org/json-en.html), a tráves de la libreria [Arduino Json](https://arduinojson.org/). 
+=======
+[Documentacion de serializacion](https://arduinojson.org/v6/doc/serialization/)
+>>>>>>> json
 
-## Soldar Placa
 
-Orden de componentes para soldadura: 
-![](Imagenes/PlacaXSoldar.jpeg)
