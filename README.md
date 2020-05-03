@@ -77,6 +77,10 @@ Autores: [Jose Tomas Dominguez](https://github.com/josetomas), Nicolas Carrasco
 
 Union de Propuesta_V1, en lugar de dejar los datos en un buffer y subirlos a la SD, esta los almacena en un json y luego los sube a la SD. 
 
+## Soldar placa
+
+Orden de componentes para soldadura: 
+![](Imagenes/PlacaXSoldar.jpeg)
 
 
 
