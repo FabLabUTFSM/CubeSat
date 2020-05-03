@@ -1,13 +1,29 @@
 # CubeSat
-
 USM Cubesat respositorio para Firmware
-<<<<<<< HEAD
-## Propuesta_V1
-=======
 
-## Json
+## Codigos
+### Propuesta_V1
 
-### Formato
+Autor: Nicolas Carrasco
+
+
+#### Sensores 
+- [Accelerometro](https://www.adafruit.com/product/1413)
+- [Magnetometro](https://www.adafruit.com/product/3463)
+- [Sensor de Temperatura](https://www.adafruit.com/product/1782)
+- [Presión](https://www.adafruit.com/product/3966)
+- [DataLogger](https://www.adafruit.com/product/2922)
+- [Gases](https://www.adafruit.com/product/380)
+
+
+#### Trabajos pendientes
+
+Añadir [GPS](https://www.adafruit.com/product/746)
+
+### Json
+
+
+#### Formato
 
 {"GPS":[Lat, Long, speed, angle, altitude, satelites], "Accelerometer": [x,y,z], "Magnetometer": [O1,O2,O3,O4,O5,O6,O7,O8,O9], "Temperatura":temp, "Presion": [presion hPa, SeaLeves, temp], "Gases": [VOC,co2,Eta,H2]}
 
@@ -54,53 +70,29 @@ Peso del JSON medido a traves de [ArduinoJson Assistant](https://arduinojson.org
 
 El cual tiene un peso de 553 bytes en el microcontrolador STM32. 
 
->>>>>>> json
 
 
-## Json V1
-
-Autor: [Jose Tomas Dominguez](https://github.com/josetomas)
-
-Este codigo simplemente genera un Json, y lo imprime a traves del puerto serial, explica como utilizar todas las funciones que necesitamos de la libreria ArduinoJson.
-
-## Json V2 
+### Codigo Actual - Json V2
 Autores: [Jose Tomas Dominguez](https://github.com/josetomas), Nicolas Carrasco
 
 Union de Propuesta_V1, en lugar de dejar los datos en un buffer y subirlos a la SD, esta los almacena en un json y luego los sube a la SD. 
 
 
-### Trabajos pendientes
+## Soldar Placa
 
-#### Componentes a integrar en el codigo
-
-- SD. OK! 
-- Accelerometro. OK! 
-- Magnetometro. OK! 
-- Sensor de Temperatura OK! 
-- Presión. OK!
-- Gases OK!
-- GPS Ok! 
-
-#### Tareas
-- Unir Propuesta_V1 con esta. OK!
-- Guardar datos en la tarjeta. SD OK!
-- BMP: Que es OverSampling y los filtros.
-- Integrar GPS OK! 
-- Definir si el GPS funcionara por I2C, Software Serial o Hardware Serial.
-- Averiguar que significa Set GPSECHO. - Ver ejemplo de parsing. 
-- Probar en placa. 
+Orden de componentes para soldadura: 
+![](Imagenes/PlacaXSoldar.jpeg)
+USM Cubesat respositorio para Firmware
 
 
 
-## Referencias
-[Libreria](https://arduinojson.org/)
 
-<<<<<<< HEAD
-Ver branch Json.
 
-Almacenar la información en formato [Json](https://www.json.org/json-en.html), a tráves de la libreria [Arduino Json](https://arduinojson.org/). 
-=======
-[Documentacion de serializacion](https://arduinojson.org/v6/doc/serialization/)
->>>>>>> json
+
+
+
+
+
+
 
 
