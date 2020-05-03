@@ -22,7 +22,7 @@ Union de Propuesta_V1, en lugar de dejar los datos en un buffer y subirlos a la 
 - BMP: Que es OverSampling y los filtros.
 - Integrar GPS OK! 
 - Definir si el GPS funcionara por I2C, Software Serial o Hardware Serial.
-- Averiguar que significa Set GPSECHO. - Ver ejemplo de parsing. 
+- Averiguar que significa Set GPSECHO. - Ver ejemplo de parsing. x	
 - Probar en placa. 
 
 ## Referencias
